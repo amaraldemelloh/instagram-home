@@ -1,0 +1,107 @@
+body, div, section, figure, img, a, p, span{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #fafafa;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+figcaption{
+    display: none;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 27px;
+}
+#phone{
+    display: flex;
+}
+#phone-figure{}
+#phone-figure img{
+    width: 45vh;
+}
+#continue{}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6px 50px;
+    padding: 30px;
+    background-color: #ffff;
+    border: 2px solid #eeeeee;
+    color: #858585;
+}
+#instagram-logo{
+    width: 185px;
+}
+#profile-photo{
+    padding: 15px;
+}
+#profile-photo img{
+    width: 80px;
+    border-radius: 50%;
+}
+#login{
+    background: #2d90f5;
+    border: 1px solid #3a86ce;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 10px;
+}
+#logout{
+    padding-top: 10px;
+}
+#new-account{
+    display: flex;
+}
+#get-the-app{}
+#get-the-app p{
+    padding: 10px;
+    color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#download{
+    display: flex;
+    justify-content: center;
+}
+.app-download{}
+.app-download img{
+    width: 8rem;
+}
+#apple-button{}
+#googleplay-button{}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 720px) {
+    body{
+        background: #fff;
+    }
+    .group{
+        border: none;
+    }
+    .wrapper{
+        width: 90%;
+    }
+    #phone{
+        display: none;
+    }
+    #continue{
+        width: 100%;
+    }
+}
